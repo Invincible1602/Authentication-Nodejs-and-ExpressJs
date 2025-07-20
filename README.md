@@ -1,4 +1,4 @@
-# Authentication-Nodejs-and-ExpressJs
+# **Secure Authentication System**
 
 ## **Overview**
 
@@ -48,6 +48,25 @@ During **signup**, passwords must:
 
 Example valid password:
 `Test@1234`
+
+If the password is weak, server returns:
+
+```json
+{"error":"Password must be at least 8 characters long, contain uppercase, lowercase, number, and special character."}
+```
+
+Example test case for weak password:
+
+```bash
+curl -X POST http://localhost:3000/signup \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "WeakUser",
+    "email": "weak@example.com",
+    "password": "12345",
+    "mobile": "6666666666"
+  }'
+```
 
 ---
 
@@ -141,5 +160,7 @@ curl -X POST http://localhost:3000/refresh-token \
 * Cookies are **HTTP-Only** (prevents XSS)
 * JWT is used for **stateless session management**
 * OTP has **5-minute expiry**
+
+---
 
 
