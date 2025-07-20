@@ -1,0 +1,23 @@
+[
+  {
+    "id": "a788657e-9eb2-4bae-bf00-017908daea33",
+    "name": "Ashish",
+    "email": "ashish@example.com",
+    "password": "Ashish@123",
+    "mobile": "9999999999"
+  },
+  {
+    "id": "3ddb267f-a6f2-439b-aa0f-a94647b5eb44",
+    "name": "Devansh",
+    "email": "dev@example.com",
+    "password": "Devansh@123",
+    "mobile": "8888888888"
+  },
+  {
+    "id": "c9557854-00b1-4511-a499-33fc4b0cfbb3",
+    "name": "Priya",
+    "email": "priya@example.com",
+    "password": "Priya@123",
+    "mobile": "7777777777"
+  }
+]
